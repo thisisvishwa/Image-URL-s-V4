@@ -1,0 +1,23 @@
+/* styles.css */
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.extra-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.extra-media-item {
+    flex: 0 0 calc(33.3333% - 10px);
+    margin-bottom: 20px;
+}
+
+.extra-media-item img {
+    max-width: 100%;
+    height: auto;
+}

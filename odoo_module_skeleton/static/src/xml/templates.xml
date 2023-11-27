@@ -1,0 +1,16 @@
+```xml
+<odoo>
+    <template id="product_template_extend" inherit_id="website_sale.product">
+        <xpath expr="//div[@class='oe_website_sale_images']" position="replace">
+            <div class="oe_website_sale_images">
+                <img class="img img-responsive" t-att-src="product.main_image_url" alt="Product Image"/>
+                <div class="extra_images">
+                    <t t-foreach="product.extra_media_urls" t-as="url">
+                        <img class="img img-responsive" t-att-src="url" alt="Extra Image"/>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
+```
